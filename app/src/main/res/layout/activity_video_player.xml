@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".VideoPlayer.VideoPlayerActivity">
+
+    <RelativeLayout
+        android:id="@+id/songs_topbar_layout"
+        android:layout_width="match_parent"
+        android:background="@color/colorPrimary"
+        android:layout_height="?attr/actionBarSize">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="Videos"
+            android:textColor="@color/Gray"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/video_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:descendantFocusability="blocksDescendants">
+    </android.support.v7.widget.RecyclerView>
+
+
+</LinearLayout>

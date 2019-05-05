@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SelectUserActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="?actionBarSize"
+                android:layout_marginTop="?actionBarSize"
+                android:gravity="center"
+                android:text="Sign Up And Login"
+                android:textColor="@color/Black"
+                android:textSize="20dp" />
+
+
+                <ImageView
+                    android:layout_width="100dp"
+                    android:id="@+id/AdminUser"
+                    android:layout_marginTop="50dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/ic_user"
+                    android:onClick="doThis"
+                    android:layout_height="100dp" />
+
+
+        </LinearLayout>
+
+
+
+<include layout="@layout/bottom_sheet_layout"></include>
+
+</android.support.design.widget.CoordinatorLayout>

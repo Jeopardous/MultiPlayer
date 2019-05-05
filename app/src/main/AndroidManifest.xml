@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.cheguza.facilitycenter">
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.SEND_SMS"/>
+    <uses-permission android:name="android.permission.READ_SMS"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_start_icon"
+        android:label="MultiPlayer"
+        android:roundIcon="@mipmap/ic_start_icon_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".SplashScreen">
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+
+        </activity>
+        <activity android:name=".SelectUserActivity">
+
+        </activity>
+        <activity android:name=".Photos.PhotoViewerActivity" />
+        <activity android:name=".VideoPlayer.VideoPlayerActivity" />
+        <activity android:name=".MusicPlayer.MusicPlayerActivity" />
+        <activity android:name=".SettingsActivity" >
+
+
+        </activity>
+        <activity android:name=".UserActivity" >
+
+
+        </activity>
+        <activity android:name=".VideoPlayer.PlayVideoView"/>
+        <activity android:name=".Home.HomeActivity" />
+        <activity android:name=".EditUserActivity">
+
+        </activity>
+
+    </application>
+
+</manifest>

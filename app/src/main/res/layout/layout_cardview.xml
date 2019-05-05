@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:id="@+id/cardviewLayout"
+    android:tag="cards main container">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/cardView"
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:layout_width="320dp"
+        android:layout_gravity="center"
+        android:layout_height="250dp"
+        card_view:cardCornerRadius="10dp"
+        card_view:cardElevation="10dp"
+        card_view:cardBackgroundColor="@color/white"
+        card_view:cardUseCompatPadding="true">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/inside_card_layout"
+            android:elevation="10dp"
+            android:weightSum="100"
+            android:background="@color/Gray"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/insideCardImageView"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="80"
+                android:background="@color/Black"
+                android:cropToPadding="true"
+                android:src="@drawable/ic_music"/>
+
+            <TextView
+                android:id="@+id/insideCardTextView"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="20"
+                android:text="play music"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:background="@color/colorPrimary"
+                android:gravity="center"/>
+
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>

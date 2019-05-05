@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="100"
+    tools:context=".UserActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <android.support.design.widget.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/border_bottom">
+        <android.support.v7.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/ep_toolBar">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="20dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="20dp"
+                android:id="@+id/backArrow"
+                android:src="@drawable/ic_backarrow"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="User Profile"
+                android:textSize="15dp"
+                android:textColor="@color/Black"
+                android:layout_toRightOf="@+id/backArrow"
+                android:layout_marginStart="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_centerVertical="true"/>
+
+        </RelativeLayout>
+        </android.support.v7.widget.Toolbar>
+        </android.support.design.widget.AppBarLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:background="@drawable/border_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="30"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:paddingRight="8dp"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/ic_user"/>
+        <TextView
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Change Photo"
+            android:textSize="15dp"
+            android:textColor="@color/Black"
+            android:layout_marginTop="20dp"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="70"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center_vertical"
+            android:background="@drawable/border_bottom">
+
+            <TextView
+                android:id="@+id/user_name_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="USERNAME"
+                android:textSize="20dp"
+                android:layout_marginLeft="8dp"
+                android:textStyle="italic"
+                android:textColor="@color/Black"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center_vertical"
+            android:background="@drawable/border_bottom">
+            <TextView
+                android:id="@+id/full_name_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="name"
+                android:textSize="18dp"
+                android:textColor="@color/Black"
+                android:layout_marginLeft="8dp"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center_vertical"
+            android:background="@drawable/border_bottom">
+            <TextView
+                android:id="@+id/phone_no_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="+91 9461530714"
+                android:textSize="18dp"
+                android:textColor="@color/Black"
+                android:layout_marginLeft="8dp"/>
+        </LinearLayout>
+
+
+
+
+    </LinearLayout>
+
+</LinearLayout>
